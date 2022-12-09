@@ -1,0 +1,95 @@
+<!-- 
+  studentsInfo.html
+  WAD Mid term
+
+  Created by Syed Ahtsham on 05/12/22.
+  Copyright © 2022 Syed Ahtsham. All rights reserved. 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Students Info</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="studentsInfo.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        * {
+          box-sizing: border-box;
+        }
+        
+        /* Create three equal columns that floats next to each other */
+        .column {
+          float: left;
+          width: 33.33%;
+          padding: 10px;
+         height: 1000px;
+        }
+        
+        /* Clear floats after the columns */
+        .row:after {
+          content: "";
+          display: table;
+          clear: both;
+        }
+        
+        /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 600px) {
+          .column {
+            width: 100%;
+          }
+        }
+        </style>
+        
+</head>
+<body>
+
+    <div class="row">
+        <div class="column" style="background-color:#aaa;">
+            <div class="wrapper">
+                <div class="cube-box">
+                    <!-- <div style=" background-color: red;"></div>
+                    <div style=" background-color: green;"></div>
+                    <div style=" background-color: black;"></div>
+                    <div style=" background-color: blue;"></div>
+                    <div style=" background-color: yellow;"></div>
+                    <div style=" background-color: cyan;"></div> -->
+                    <img src="images/img-1.jpg">
+                    <img src="images/img-2.jpg">
+                    <img src="images/img-3.jpg">
+                    <img src="images/img-4.jpg">
+                    <img src="images/img-5.jpg">
+                    <img src="images/img-6.jpg">
+                </div>
+            </div>
+           
+
+        </div>
+        <div class="column p-5" style="background-color:#bbb;">
+          <h4>Select max 6 students:</h4>
+          <label>Hold control to select Multiple Students</label>
+          
+         <div id="studentsList">
+
+         </div>
+
+          
+        </div>
+        <div class="column p-5" style="background-color:#ccc;">
+          <h4>Selected Students:</h4>
+          <div id="selectedStds">
+
+          </div>
+
+          <div id="proceed"></div>
+        </div>
+      </div>
+      
+
+    <script type="text/javascript" src="studentsInfo.js"></script>
+    </body>
+</html>
